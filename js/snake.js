@@ -23,8 +23,8 @@ const DOT_SIZE = 10;
 const ALL_DOTS = 900;
 const MAX_RAND = 29;
 const DELAY = 140;
-const C_HEIGHT = 300;
-const C_WIDTH = 300;
+const C_HEIGHT = 700;
+const C_WIDTH = 700;
 
 const LEFT_KEY = 37;
 const RIGHT_KEY = 39;
@@ -114,6 +114,8 @@ function checkApple() {
     if ((x[0] == apple_x) && (y[0] == apple_y)) {
 
         dots++;
+        document.getElementById('count_apples').innerText = dots - 3;
+        //console.log(dots);
         locateApple();
     }
 }
